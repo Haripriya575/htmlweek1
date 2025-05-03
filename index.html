@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>Document</title>
+       
+       <style>
+        table, th, td {
+               border:1px solid black;
+               border-collapse: collapse;
+}
+.blue-bg{
+    background-color: #D6EEEE;
+}
+.box {
+            border: 2px solid black;
+            width: 300px;
+            padding: 1px;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .link-box {
+            border: 1px solid black;
+            width: 500px;
+            padding: 5px;
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+      body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+      }
+      .section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            width: 80%;
+            max-width: 800px;
+        }
+        a {
+            margin-right: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: blue;
+        }
+        form {
+            width: 100%;
+        }
+        form table {
+            width: 100%;
+        }
+        </style>
+        
+    
+    
+        
+
+<table style="width:100%">
+    <colgroup>
+        <col span="3" style="background-color: #7dd4d4;">
+      </colgroup>
+           <tr>
+            <th style="padding: 8px;">Firstname</th>
+            <th style="padding: 8px;">Lastname</th>
+            <th style="padding: 8px;">Age</th>
+        </tr>
+        <tr>
+            <td style="padding: 8px;">Jill</td>
+            <td style="padding: 8px;">Smith</td>
+            <td style="padding: 8px;">50
+                <tr>
+                    <td style="padding: 8px;">Eve</td>
+                    <td style="padding: 8px;">Jackson</td>
+                    <td style="padding: 8px;">94</td>
+
+                </tr>
+                <tr>
+                    <td style="padding: 8px;">John</td>
+                    <td style="padding: 8px;">Doe</td>
+                    <td style="padding: 8px;">80</td>
+                </tr>
+            </td>
+        </tr>
+        </table>
+        </head>
+        <body>
+            <div class="box">
+    <p>Lists can be nested(list inside list): </p>
+    
+    <ul>
+      <li> Coffee</li> 
+      <li>Tea</li>
+      <ul>
+        <li>Blacktea</li>
+        <li>Greentea</li>
+      </ul>
+    </ul>
+    <ul>
+        <li>Milk</li>
+    </ul>
+</div>
+<div class="link-box">
+    <p>Click any of the following links</p>
+    <a href="#" target="_blank">Opens in New</a> |
+    <a href="#" target="_self">Opens in Self</a> |
+    <a href="#" target="_parent">Opens in Parent</a> |
+    <a href="#" target="body">Opens in Body</a>
+</div>
+<div class="section" style="border: none;">
+    <h2>Registration form</h2>
+    <form>
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="fname"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lname"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="pass"></td>
+            </tr>
+            <tr>
+                <td>Re-enter Password</td>
+                <td><input type="password" name="repass"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" name="age"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text" name="phone"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea rows="3" name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input type="text" name="state"></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select>
+                        <option>Choose your country</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Languages known</strong></td>
+                <td>
+                    <input type="checkbox"> English
+                    <input type="checkbox"> Kannada
+                    <input type="checkbox"> Hindi
+                    <input type="checkbox"> Telugu
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" checked> Hereby I declare all the given details are true
+                    <span style="float: right;">Log in to <a href="#">Acharya</a> website</span>
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+</div>
+<div style="text-align: center; margin-top: -10px;">
+    <input type="submit" value="Register" style="padding: 8px 16px;">
+</div>
+
+        
+    </body>
+        
+</html>
+
+
